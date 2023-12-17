@@ -1,0 +1,362 @@
+@media (max-width: 1066px) {
+  .header__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hero__background {
+    padding-bottom: 700px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #0e0e0e 80.15%), url("../img/hero_img_screens.png");
+  }
+
+  .opportunities__list-wrap {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .opportunities__list {
+    max-width: 560px;
+    padding-right: 0;
+  }
+
+  .plugins__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 880px) {
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--color-black);
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.7s ease-in-out,
+                visibility 1.2s ease-in-out;
+  }
+
+  .menu--active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+    height: 100%;
+    padding-top: 90px;
+    background-color: rgb(21 21 21);
+  }
+
+  .header__button {
+    position: absolute;
+    top: 351px;
+    left: calc(50% - 72px);
+    z-index: 100;
+    visibility: hidden;
+    transform: translateX(-600%);
+    transition: transform 0.7s ease-in-out,
+                visibility 1.2s ease-in-out;
+  }
+
+  .header__button--active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .hero__container {
+    padding-top: 66px;
+  }
+
+  .hero__title {
+    margin-bottom: 27px;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+  }
+
+  .hero__descr {
+    margin-bottom: 67px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .plugins__item {
+    width: 100%;
+    max-width: 348px;
+    padding: 47px 40px 15px 40px;
+  }
+
+  .plugin-card__btn {
+    padding: 13px 35px;
+  }
+
+  .plugin-card__bottom-wrap {
+    padding-top: 51px;
+  }
+
+  .galerie__list {
+    gap: 31px 32px;
+  }
+
+  .galerie__item:nth-last-child(-n+3) {
+    display: none;
+  }
+
+  .partners__list {
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 385px;
+  }
+
+  .feedbacks__list {
+    max-width: 352px;
+  }
+
+  .feedbacks__item {
+    width: 100%;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 91px;
+  }
+
+  /* --- BURGER MENU --- */
+
+  .burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .burger__line {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: transform 0.3s ease-in-out,
+      top 0.3s ease-in-out;
+  }
+
+  .burger__line:first-child {
+    top: 0;
+  }
+
+  .burger__line:last-child {
+    top: calc(100% - 2px);
+  }
+
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger:focus,
+  .burger:hover {
+    opacity: 0.8;
+  }
+
+  .burger--active .burger__line:first-child {
+    top: 50%;
+    transform: rotate(35deg);
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    transform: scale(0);
+  }
+
+  .burger--active .burger__line:last-child {
+    top: 50%;
+    transform: rotate(-35deg);
+  } 
+}
+
+@media (max-width: 549px) {
+  .container {
+    max-width: 536px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .header__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hero__background {
+    padding-bottom: 474px;
+    background-image: none;
+    background-image: linear-gradient(180deg, rgba(30, 30, 30, 0.00) 0%, #0e0e0e 100%), url("../img/hero_img_screens_mobile.png");
+    background-repeat: no-repeat;
+    background-position: top 21px center;
+    background-size: auto;
+  }
+
+  .opportunities__container {
+    padding-bottom: 139px;
+  }
+
+  .opportunities__text-wrap {
+    margin-bottom: 28px;
+  }
+
+  .opportunities__list {
+    max-width: 297px;
+    padding-top: 37px;
+  }
+
+  .opportunities__item:not(:last-child) {
+    margin-bottom: 67px;
+  }
+
+  .plugins__title {
+    margin-bottom: 19px;
+  }
+
+  .plugins__descr {
+    max-width: 424px;
+  }
+
+  .partners__title {
+    margin-bottom: 20px;
+  }
+
+  .partners__descr {
+    max-width: 339px;
+  }
+  
+  .partners__list {
+    max-width: 286px;
+    gap: 45px;
+  }
+
+  .partners__item--basecamp svg {
+    width: 56px;
+    height: 46px;
+  }
+
+  .partners__item--airbnb svg {
+    width: 47px;
+    height: 51px;
+  }
+
+  .partners__item--ibm svg {
+    width: 83px;
+    height: 33px;
+  }
+
+  .feedbacks__list {
+    gap: 22px;
+  }
+
+  .feedbacks__descr {
+    max-width: 239px;
+  }
+
+  .footer__container {
+    align-items: flex-start;
+    gap: 75px;
+    max-width: 268px;
+    padding-top: 159px;
+    padding-bottom: 120px;
+    padding-left: 24px;
+  }
+
+  .footer__navigation {
+    flex-direction: column;
+    gap: 75px;
+  }
+
+  .connection__list {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero__container {
+    padding-top: 35px;
+  }
+
+  .hero__title {
+    margin-bottom: 13px;
+    font-size: 46px;
+    line-height: 51px;
+  }
+
+  .section-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .opportunities__container {
+    padding-bottom: 100px;
+  }
+
+  .opportunities__text-wrap {
+    padding-top: 100px;
+  }
+
+  .plugins__container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .plugins__item {
+    max-width: 300px;
+    padding: 30px 30px 15px 30px;
+  }
+
+  .plugins__subtitle {
+    margin-bottom: 16px;
+  }
+
+  .plugin-card__bottom-wrap {
+    padding-top: 40px;
+  }
+
+  .plugin-card__btn {
+    padding: 10px 22px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .plugins__img {
+    width: 100%;
+  }
+
+  .plugins__img--left {
+    padding: 30px 0;
+  }
+
+  .galerie__img {
+    width: 100%;
+  }
+
+  .partners__container {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .feedbacks__container {
+    padding-bottom: 30px;
+  }
+}

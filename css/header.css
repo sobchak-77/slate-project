@@ -1,0 +1,47 @@
+.header {
+  background-color: #000;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 49px 34px 51px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo:focus,
+.logo:hover,
+.logo:active {
+  opacity: 0.8;
+}
+
+.menu__list {
+  display: flex;
+  gap: 51px;
+}
+
+.menu__link {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+}
+
+.header__enter {
+  padding: 12px 48px;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+}
