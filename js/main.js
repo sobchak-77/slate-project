@@ -4,8 +4,9 @@ const page = document.getElementById('page');
 const menu = document.getElementById('menu');
 const burger = document.getElementById('burger');
 const enterBtn = document.getElementById('enter');
-const menuLink = document.querySelector('.menu__link');
+// const menuLink = document.querySelector('.menu__link');
 
+// действия при клике на "бургер"
 burger.addEventListener('click', function() {
   menu.classList.toggle('menu--active');
   burger.classList.toggle('burger--active');
@@ -13,8 +14,20 @@ burger.addEventListener('click', function() {
   page.classList.toggle('stop-scroll');
 });
 
-menuLink.addEventListener('click', function() {
-  if (page.classList.contains('stop-scroll')) {
+// действия при клике на пункты "меню"
+menu.addEventListener('click', function () {
+  menu.classList.remove('menu--active');
+  burger.classList.remove('burger--active');
+  enterBtn.classList.remove('header__button--active');
+  page.classList.remove('stop-scroll');
+});
+
+// действия при клике на кнопку 'Escape'
+window.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    menu.classList.remove('menu--active');
+    burger.classList.remove('burger--active');
+    enterBtn.classList.remove('header__button--active');
     page.classList.remove('stop-scroll');
   };
 });
@@ -33,6 +46,7 @@ callModalBtn.addEventListener('click', function() {
 modalWindowForm.querySelector('.modal').addEventListener('click', function(event) {
   event._isClick = true;
 });
+
 modalWindowForm.addEventListener('click', function(event) {
   if (event._isClick === true) {
     return;
