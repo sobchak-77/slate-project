@@ -45,7 +45,7 @@ html {
   max-width: 1116px;
   margin: 0 auto;
   padding: 0 15px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .visually-hidden {
@@ -349,6 +349,7 @@ html {
 /*  --- OPPORTUNITIES --- */
 
 .opportunities__container {
+  padding-top: 164px;
   padding-bottom: 106px;
 }
 
@@ -363,7 +364,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 164px;
   margin-bottom: 80px;
   text-align: center;
 }
@@ -803,7 +803,7 @@ html {
 }
 
 .footer-column__link {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
