@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1066px) {
   .header__container {
     padding-left: 30px;
@@ -168,10 +175,12 @@
   }
 
   .feedbacks__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     max-width: 352px;
   }
 
-  .feedbacks__item {
+  .card {
     width: 100%;
   }
 
